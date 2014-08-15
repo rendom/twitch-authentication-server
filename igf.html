@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitch oAuth2</title>
+	<meta charset="utf-8" />
+	</head>
+<body id="content">
+	Something went wrong :/ please try again.
+
+	<script type="text/javascript" charset="utf-8">
+		var content = document.getElementById("content");	
+		var hash = location.hash;
+		if(match = hash.match(/access_token=([a-z0-9]+)&/)){
+			if(match !== undefined && match[1] !== undefined){
+				content.innerHTML = 'Your token: '+match[1];
+			}
+		}
+	</script>
+</body>
+</html>
