@@ -1,6 +1,5 @@
 var http	= require('http'),
 	fs		= require('fs'),
-	config  = require('./config.js'),
 	html	= fs.readFileSync('igf.html'),
 	port	= 9899;
 
